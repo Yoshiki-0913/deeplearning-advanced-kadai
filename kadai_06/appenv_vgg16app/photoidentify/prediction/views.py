@@ -7,8 +7,6 @@ from tensorflow.keras.models import load_model
 from io import BytesIO
 import os
 
-# model = VGG16(weights='imagenet')
-
 def predict(request):
   if request.method == 'GET':
     form = ImageUploadForm()
